@@ -23,7 +23,7 @@ class SepedaMotor(Kendaraan):
 
 
 print("Informasi Kendaraan")
-mobil1 = Mobil("Toyota", "Avanza", 4)
+mobil1 = Mobil("Toyota", "Hilux", 4)
 print(mobil1)
 motor1 = SepedaMotor("Honda", "Vario", "Matic")
 print(motor1)
