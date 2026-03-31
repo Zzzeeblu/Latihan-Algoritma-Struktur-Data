@@ -1,6 +1,6 @@
 daftar_harga = {
     "es teh": 3000,
-    "es jeruk": 4000,
+    "es jeruk": 5000,
     "jus alpukat": 8000,
     "jus melon": 8000,
     "bakso": 10000,
