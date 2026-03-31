@@ -1,0 +1,30 @@
+daftar_harga = {
+    "es teh": 3000,
+    "es jeruk": 4000,
+    "jus alpukat": 8000,
+    "jus melon": 8000,
+    "bakso": 10000,
+    "mie ayam": 10000,
+    "jamur crispy": 5000
+}
+
+total_tagihan = 0
+
+print("=== SELAMAT DATANG DI WARUNG ===")
+print("Menu Minuman: Es Teh (3rb), Es Jeruk (4rb), Jus Alpukat (8rb), Jus Melon (8rb)")
+print("Menu Makanan: Bakso (10rb), Mie Ayam (10rb), Jamur Crispy (5rb)")
+
+while True:
+    pesanan = input("\nKetik nama pesanan (atau ketik 'selesai' untuk bayar): ").lower()
+    
+    if pesanan == "selesai":
+        break
+        
+    if pesanan in daftar_harga:
+        jumlah = int(input("Berapa porsi? "))
+        total_tagihan = total_tagihan + (daftar_harga[pesanan] * jumlah)
+        print(f"Oke, pesanan ditambahkan!")
+    else:
+        print("Menu tidak ditemukan, silakan ketik sesuai daftar.")
+print(f"TOTAL TAGIHAN ANDA: Rp {total_tagihan}")
+print("Terima kasih sudah berkunjung!")
